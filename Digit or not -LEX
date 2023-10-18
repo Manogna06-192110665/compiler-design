@@ -1,0 +1,16 @@
+%{
+%}
+
+digit [0-9]
+
+%%
+{digit} { printf("the input character is a digit.\n"); }
+.       { printf("the input character is not a digit.\n"); }
+%%
+
+
+int main()
+{
+yylex();
+return 0;
+}
